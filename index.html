@@ -18,7 +18,8 @@
         <img class="rounded" src="https://guscanada.com/wp-content/uploads/2021/09/CCTB_logo_1_RGB.png" width="100px">
         <h2>SQAE113 - DevOps Infrastructure Level 1 - CCTB</h2>
         <p><br>
-        <h3>Nov 2024</H3>
+        <h3>My favorite Language is Python</H3>
+        <p id = "current-date"></p>
         </p>
     </div>
     <div class="container">
@@ -57,6 +58,17 @@
     </div>
 
     <script src="js/js.js"></script>
+    <script>
+	function displayDate() {
+
+		const date = new Date();
+		const dateTimeString = date.toLocaleString();
+		document.getElementById('current-date').textContent = dateTimeString;
+	}
+
+	window.onload = displayDate;
+
+     </script>
 </body>
 
 </html>
